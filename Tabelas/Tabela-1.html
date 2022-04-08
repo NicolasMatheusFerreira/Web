@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de tabela 1</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }        
+
+        .tabela {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            width: 60%;            
+            border: 10cm;
+            border: 5px solid black;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }        
+
+        th, td {
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;            
+        }
+
+        th {
+            background-color: crimson;            
+        }
+
+        td {
+            background-color:royalblue;
+            height: 50px;
+            width: 100px;
+            text-align: center;            
+        }
+        
+        td:hover {
+            background-color: rgba(255, 255, 255, 0.637);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tabela">
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Data de nascimento</th>                        
+            <th>Curso</th>
+            <th>País</th>
+        </tr>
+
+        <tr>            
+            <td>Nicolas</td>
+            <td>Matheus</td>
+            <td>13/03/2001</td>
+            <td><a href="https://pt.wikipedia.org/wiki/Sistema_de_informa%C3%A7%C3%A3o" target="_blank">Sistemas de informação</a></td>                                    
+            <td rowspan="4"><a href="https://en.wikipedia.org/wiki/Brazil" target="_blank">Brasil</a></td>
+        </tr>
+
+        <tr>
+            <td>Paulo</td>
+            <td>Cesár</td>
+            <td>07/09/2000</td>
+            <td><a href="https://pt.wikipedia.org/wiki/Administra%C3%A7%C3%A3o" target="_blank">Administração</a></td>                        
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td>Giovanni</td>
+            <td>01/05/2001</td>
+            <td><a href="https://pt.wikipedia.org/wiki/Educa%C3%A7%C3%A3o_f%C3%ADsica#:~:text=Educa%C3%A7%C3%A3o%20f%C3%ADsica%20%C3%A9%20uma%20%C3%A1rea,%C3%A0%20preven%C3%A7%C3%A3o%20de%20determinadas%20doen%C3%A7as." target="_blank">E. Física</a></td>            
+        </tr>
+
+        <tr>
+            <td>Gabriel</td>
+            <td>Henrique</td>
+            <td>06/06/2002</td>
+            <td><a href="https://pt.wikipedia.org/wiki/Log%C3%ADstica" target="_blank">Logística</td>        
+        </tr>                
+    </table>
+</body>
+</html>
