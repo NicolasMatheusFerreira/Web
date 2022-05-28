@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: whrite;
+}
+
+#cabecalho {
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;	
+}
+
+#cabecalho #faixa1 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 25px;
+	background-color: #b92424;
+}
+
+#cabecalho #menu {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #ff1828;
+	box-shadow: 1px 10px 40px black;	
+}
+
+#cabecalho #menu nav ul ul {
+	position: absolute;
+	width: 200px;
+	display: none;
+	background-color: #ff182700;
+	border-radius: 15px;
+}
+
+#cabecalho #menu nav ul ul li:hover {
+	background-color: #ffffff;
+}
+
+#cabecalho #menu nav ul ul li {
+	font-size: 21px;
+	display: block;
+	background: #ff1828;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	margin: 1px;
+	border-radius: 10px;
+}
+
+#cabecalho #menu nav ul li:hover ul {
+	position: absolute;
+	left: 450px;
+	display: block;
+}
+
+
+
+#cabecalho #menu nav ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 55px;
+	left: 250px;
+}
+
+#cabecalho #menu figure {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+#cabecalho #menu nav ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	padding: 30px;
+	font-size: 20px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#cabecalho #menu nav a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#cabecalho #menu nav li a:visited {
+	color: black;
+}
+
+#cabecalho #menu nav li a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#cabecalho #menu #botoes #entrar {
+	margin: 10px;
+	border: solid;
+	border-width: 1.8px;
+	border-radius: 10px;
+	width: 100px;
+	height: 32px;
+	position: absolute;
+	top: 40px;
+	left: 1010px;
+	background-color: #ffffff;
+	text-align: center;
+	color: black;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 24px;
+}
+
+#cabecalho #menu #botoes #entrar:hover {
+	background-color: rgba(235, 235, 235, 0.808);
+}
+
+#cabecalho #menu #botoes #cadastrar {
+	margin: 10px;
+	border: solid;
+	border-width: 1.8px;
+	border-radius: 10px;
+	width: 100px;
+	height: 32px;
+	position: absolute;
+	top: 40px;
+	left: 1130px;
+	background-color: #ffffff;
+	text-align: center;
+	color: black;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 24px;
+}
+
+#cabecalho #menu #botoes #cadastrar:hover {
+	background-color: rgba(235, 235, 235, 0.808);
+}
+
+#corpo #faleconosco h1 {
+	margin: 0px;
+	position: absolute;
+	top: 170px;
+	left: 520px;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 60px;
+	
+}
+
+#corpo #faleconosco #caixa {
+	position: absolute;
+	top: 250px;
+	left: 300px;
+	width: 50%;
+}
+
+#corpo #faleconosco #caixa #nome label {
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#corpo #faleconosco #caixa #nome input {
+	position: absolute;
+	top: 100px;
+	left: 280px;
+	width: 300px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#corpo #faleconosco #caixa #email label {
+	position: absolute;
+	top: 170px;
+	left: 150px;
+	width: 100px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#corpo #faleconosco #caixa #email input {
+	position: absolute;
+	top: 170px;
+	left: 280px;
+	width: 300px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#corpo #faleconosco #caixa #contato label {
+	position: absolute;
+	top: 250px;
+	left: 150px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#corpo #faleconosco #caixa #contato input {
+	position: absolute;
+	top: 250px;
+	left: 280px;
+	width: 300px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#corpo #faleconosco #caixa #texto label {
+	position: absolute;
+	top: 330px;
+	left: 150px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#corpo #faleconosco #caixa #texto input {
+	position: absolute;
+	top: 390px;
+	left: 150px;
+	width: 600px;
+	height: 200px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#rodape {
+	margin: 0;
+	padding: 0;
+}
+
+#rodape #faixa-final {
+	height: 57px;
+	width: 100%;
+	position: absolute;
+	top: 1577px;
+	background-color: black;
+}
+
+#rodape .rodape {
+	position: absolute;
+	top: 1000px;
+}
+
+#rodape h5 {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 1600px;
+	left: 500px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .sociais {
+	position: absolute;
+	top: 1500px;
+	left: 995px;
+}
+
+#rodape .sociais li {
+	margin: 0;
+	padding: 3px;
+	display: inline;
+}
+
+#rodape .sociais li:hover {
+	filter: invert(1);
+}
+
+#rodape .outros1 ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 1375px;
+	left: 800px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .outros1 ul li a {
+	color: #ffffff;	
+	text-decoration: none;
+}
+
+#rodape .outros1 ul li a:hover {
+	text-decoration: none;
+	color: #ff1828;
+}
+
+#rodape .outros2 ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 1375px;
+	left: 500px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .outros2 ul li a {
+	color: #ffffff;	
+	text-decoration: none;
+}
+
+#rodape .outros2 ul li a:hover {
+	text-decoration: none;
+	color: #ff1828;
+}
+
+#rodape #contato a {
+	font-size: 18px;
+	position: absolute;
+	top: 1325px;
+	left: 1030px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#rodape #contato a:hover {
+	color: #ff1828;
+}

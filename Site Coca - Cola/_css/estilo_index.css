@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+#cabecalho {
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;	
+}
+
+#cabecalho #faixa1 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 25px;
+	background-color: #b92424;
+}
+
+#cabecalho #menu {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #ff1828;
+	box-shadow: 1px 10px 40px black;	
+}
+
+#cabecalho #menu nav ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 55px;
+	left: 250px;
+}
+
+#cabecalho #menu nav ul ul {
+	position: absolute;
+	top: 52px;
+	width: 200px;
+	display: none;
+	background-color: #ff182700;
+	border-radius: 15px;
+}
+
+#cabecalho #menu nav ul ul li {
+	font-size: 21px;
+	display: block;
+	background: #ff1828;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	margin: 1px;
+	border-radius: 10px;
+}
+
+#cabecalho #menu nav ul li:hover ul {
+	position: absolute;
+	left: 450px;
+	display: block;
+}
+
+#cabecalho #menu nav ul ul li:hover {
+	background-color: #ffffff;
+}
+
+#cabecalho #menu figure {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+#cabecalho #menu nav ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	padding: 30px;
+	font-size: 20px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#cabecalho #menu nav a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#cabecalho #menu nav li a:visited {
+	color: black;
+}
+
+#cabecalho #menu nav li a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#cabecalho #menu #botoes #entrar {
+	margin: 10px;
+	border: solid;
+	border-width: 1.8px;
+	border-radius: 10px;
+	width: 100px;
+	height: 32px;
+	position: absolute;
+	top: 40px;
+	left: 1010px;
+	background-color: #ffffff;
+	text-align: center;
+	color: black;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 24px;
+}
+
+#cabecalho #menu #botoes #entrar:hover {
+	background-color: rgba(235, 235, 235, 0.808);
+}
+
+#cabecalho #menu #botoes #cadastrar {
+	margin: 10px;
+	border: solid;
+	border-width: 1.8px;
+	border-radius: 10px;
+	width: 100px;
+	height: 32px;
+	position: absolute;
+	top: 40px;
+	left: 1130px;
+	background-color: #ffffff;
+	text-align: center;
+	color: black;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 24px;
+}
+
+#cabecalho #menu #botoes #cadastrar:hover {
+	background-color: rgba(235, 235, 235, 0.808);
+}
+
+#corpo {
+	margin-top: 100%;
+	padding: 0;	
+}
+
+#corpo article #banner1 {
+	width: 1349px;
+	height: 490px;
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	margin: 0;
+	animation: slide 20s infinite;
+	animation-direction: alternate;
+}
+
+
+@keyframes slide {
+	0%, 20% {
+		background-image: url(../_img/banner1.jpg);
+	}
+
+	25%, 40% {
+		background-image: url(../_img/banner2.jpg);
+	}
+
+	45%, 70% {
+		background-image: url(../_img/banner3.jpg);
+	}
+
+	70%, 100% {
+		background-image: url(../_img/banner4.jpg);		
+	}
+}
+
+#corpo article .slogan {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 90px;
+	color: #019757;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+}
+
+#corpo article #banner1 audio {
+	position: absolute;
+	top: 350px;
+	left: 450px;
+	width: 500px;
+}
+
+#corpo #meio img {
+	z-index: 1;
+	position: absolute;
+	top: 350px;
+}
+
+#corpo #meio {
+	background-color: #ffec47;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 600px;	
+}
+
+#corpo #meio #oferta1 {
+	position: absolute;
+	left: 250px;
+	top: -250px;
+	animation: slide1 20s infinite;
+	animation-direction: alternate;
+}
+
+#corpo #meio #oferta1 img {
+	position: absolute;
+	left: 30px;
+	top: 350px;
+}
+
+#corpo #meio #oferta1 h1 {
+	font-family: Calibri;
+	font-size: 64px;
+	color: red;
+	position: absolute;
+	top: 250px;
+	left: 200px;
+}
+
+#corpo #meio #oferta1 #forma {
+	position: absolute;
+	top: 450px;
+	left: 500px;
+	width: 340px;
+	height: 300px;
+	border: solid;
+	background-color: red;
+	color: #ffffff;
+	border-radius: 300px;
+}
+
+#corpo #meio #oferta1 #forma h2 {
+	font-family: Calibri;
+	font-size: 28px;
+	position: absolute;
+	top: 30px;
+	left: 90px;
+	width: 190px;
+}
+
+#corpo #meio #oferta1 #forma h2 b {
+	color: #723900;
+	font-size: 40px;
+}
+
+@keyframes slide1 {
+	0%, 5% {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+
+	5%, 30% {
+		opacity: 0;
+	}
+
+	30%, 85% {
+		opacity: 100;
+		transform: translateX(-50px);	
+	}
+	95%, 100% {
+		transform: translateX(-300px);	
+		opacity: 0;
+	}
+}
+
+#corpo #meio #ButtonOfertas button {
+	z-index: 1;
+	position: absolute;
+	top: 570px;
+	left: 550px;
+	width: 220px;
+	height: 50px;
+	margin:0;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #ffffff;
+	border-radius: 20px;
+	border-color: black;
+	color: black;
+}
+
+#corpo #meio #ButtonOfertas button:hover {
+	background-color: black;
+	color: #ffffff;
+}
+
+#fim {
+	background-color: #00965a;
+	width: 100%;
+	height: 1150px;
+	position: absolute;
+	top: 1400px;
+}
+
+#corpo #fim img {
+	z-index: 1;
+	position: absolute;
+	top: -130px;
+}
+
+#fim #video {
+	z-index: 1;
+	position: absolute;
+	top: 50px; 
+	left: 100px;
+}
+
+#fim #video iframe {
+	border-radius: 25px;
+}
+
+#fim h1 {
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 60px;
+	position: absolute;
+	top: 30px;
+	left: 900px;
+	color: #ffffff;
+}
+
+#rodape {
+	margin: 0;
+	padding: 0;
+}
+
+#rodape #faixa-final {
+	height: 57px;
+	width: 100%;
+	position: absolute;
+	top: 2493px;
+	background-color: black;
+}
+
+#rodape .rodape {
+	position: absolute;
+	top: 1916px;
+}
+
+#rodape h5 {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 2510px;
+	left: 500px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .sociais {
+	position: absolute;
+	top: 2395px;
+	left: 995px;
+}
+
+#rodape .sociais li {
+	margin: 0;
+	padding: 3px;
+	display: inline;
+}
+
+#rodape .sociais li:hover {
+	filter: invert(1);
+}
+
+#rodape .outros1 ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 2275px;
+	left: 800px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .outros1 ul li a {
+	color: #ffffff;	
+	text-decoration: none;
+}
+
+#rodape .outros1 ul li a:hover {
+	text-decoration: none;
+	color: #ff1828;
+}
+
+#rodape .outros2 ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 2275px;
+	left: 500px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .outros2 ul li a {
+	color: #ffffff;	
+	text-decoration: none;
+}
+
+#rodape .outros2 ul li a:hover {
+	text-decoration: none;
+	color: #ff1828;
+}
+
+#rodape #contato a {
+	font-size: 18px;
+	position: absolute;
+	top: 2255px;
+	left: 1030px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#rodape #contato a:hover {
+	color: #ff1828;
+}

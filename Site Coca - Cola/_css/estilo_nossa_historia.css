@@ -1,0 +1,716 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: whrite;
+}
+
+#cabecalho {
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;	
+}
+
+#cabecalho #faixa1 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 25px;
+	background-color: #b92424;
+}
+
+#cabecalho #menu {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #ff1828;
+	box-shadow: 1px 10px 40px black;	
+}
+
+#cabecalho #menu nav ul ul {
+	position: absolute;
+	width: 200px;
+	display: none;
+	background-color: #ff182700;
+	border-radius: 15px;
+}
+
+#cabecalho #menu nav ul ul li:hover {
+	background-color: #ffffff;
+}
+
+#cabecalho #menu nav ul ul li {
+	font-size: 21px;
+	display: block;
+	background: #ff1828;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	margin: 1px;
+	border-radius: 10px;
+}
+
+#cabecalho #menu nav ul li:hover ul {
+	position: absolute;
+	left: 450px;
+	display: block;
+}
+
+
+#cabecalho #menu nav ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 55px;
+	left: 250px;
+}
+
+#cabecalho #menu figure {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+#cabecalho #menu nav ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	padding: 30px;
+	font-size: 20px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#cabecalho #menu nav a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#cabecalho #menu nav li a:visited {
+	color: black;
+}
+
+#cabecalho #menu nav li a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#cabecalho #menu #botoes #entrar {
+	margin: 10px;
+	border: solid;
+	border-width: 1.8px;
+	border-radius: 10px;
+	width: 100px;
+	height: 32px;
+	position: absolute;
+	top: 40px;
+	left: 1010px;
+	background-color: #ffffff;
+	text-align: center;
+	color: black;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 24px;
+}
+
+#cabecalho #menu #botoes #entrar:hover {
+	background-color: rgba(235, 235, 235, 0.808);
+}
+
+#cabecalho #menu #botoes #cadastrar {
+	margin: 10px;
+	border: solid;
+	border-width: 1.8px;
+	border-radius: 10px;
+	width: 100px;
+	height: 32px;
+	position: absolute;
+	top: 40px;
+	left: 1130px;
+	background-color: #ffffff;
+	text-align: center;
+	color: black;
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 24px;
+}
+
+#cabecalho #menu #botoes #cadastrar:hover {
+	background-color: rgba(235, 235, 235, 0.808);
+}
+
+#corpo {
+	margin-top: 100%;
+	padding: 0;
+}
+
+#corpo #desenvolvimento img {
+	float: left;
+	margin: 10px;
+}
+
+#corpo #introducao h1 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 60px;
+	padding: 20px;
+	position: absolute;
+	top: 100px;
+	left: 500px;
+}
+
+#corpo #introducao h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 20px;
+	position: absolute;
+	top: 250px;
+	left: 600px;
+}
+
+#corpo #introducao p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 180px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #introducao a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #introducao a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #introducao a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento #historia h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 600px;
+	left: 550px;
+}
+
+#corpo #desenvolvimento #historia p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 500px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento #historia  a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento #historia  a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento #historia a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento #modelosEngarrafados h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 1200px;
+	left: 550px;
+}
+
+#corpo #desenvolvimento #modelosEngarrafados p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 1100px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento #modelosEngarrafados a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento #modelosEngarrafados a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento #modelosEngarrafados a:visited {
+	color: black;
+}
+
+
+#corpo #desenvolvimento .SucessoDaBebida h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 1620px;
+	left: 550px;
+}
+
+#corpo #desenvolvimento .SucessoDaBebida p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 1530px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento .SucessoDaBebida a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento .SucessoDaBebida a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento .SucessoDaBebida a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento .NoBrasil h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 2050px;
+	left: 550px;
+}
+
+#corpo #desenvolvimento .NoBrasil p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 1970px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento .NoBrasil a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento .NoBrasil a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento .NoBrasil a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento .Estrategias h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 2440px;
+	left: 600px;
+}
+
+#corpo #desenvolvimento .Estrategias p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 2370px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento .Estrategias a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento .Estrategias a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento .Estrategias a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento .Fracasso h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 2940px;
+	left: 450px;
+}
+
+#corpo #desenvolvimento .Fracasso p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 2860px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento .Fracasso a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento .Fracasso a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento .Fracasso a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento .UrsoPolar h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 3300px;
+	left: 450px;
+}
+
+#corpo #desenvolvimento .UrsoPolar p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 3200px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento .UrsoPolar a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento .UrsoPolar a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento .UrsoPolar a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento .Atualidade h2 {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	top: 3650px;
+	left: 450px;
+}
+
+#corpo #desenvolvimento .Atualidade p {
+	font-family: Calibri; Arial; Segoe UI;
+	font-size: 20px;
+	position: absolute;
+	padding: 20x;
+	margin: 15%;
+	top: 3560px;
+	left: center;
+	text-align: justify;
+	text-indent: 100px;
+}
+
+#corpo #desenvolvimento .Atualidade a {
+	text-decoration: none;
+	color: #ff011a;
+}
+
+#corpo #desenvolvimento .Atualidade a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#corpo #desenvolvimento .Atualidade a:visited {
+	color: black;
+}
+
+#corpo #desenvolvimento .AlbumFotos {
+	position: absolute;
+	top: 4150px;
+	left: 200px;
+}
+
+#corpo #desenvolvimento .AlbumFotos p {
+	position: absolute;
+	top: -30px;
+	left: 0px;
+	width: 700px;
+	font-family: Calibri; Arial; Segoe UI;
+	font-weight: bold;
+	font-size: 21px;
+	color: #ff011a;
+}
+
+#albumfotos {
+	position: absolute;
+	top: 50px;
+	left: -40px;
+	width: 900px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+#albumfotos li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px; solid black;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	-webkit-transition: all .4s ease-in;
+	border-radius: 10px;
+}
+
+#albumfotos li span {
+	opacity: 0;
+	color: #ff1828;
+	text-shadow:1px 1px 1px black;
+	background-color: rgba(0,0,0,.3);
+	font-size: 12px;
+	line-height: 360px;
+	padding: 5px;
+	font-family: Calibri; Arial; Segoe UI;
+}
+
+#albumfotos li:hover span {
+	opacity: 1;
+}
+#albumfotos li:hover {
+	-webkit-transform: scale(1.5);
+}
+
+#albumfotos #foto1 {
+	background: url('../_img/foto1.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto1:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#albumfotos #foto2 {
+	background: url('../_img/foto2.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto2:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#albumfotos #foto3 {
+	background: url('../_img/foto3.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto3:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#albumfotos #foto4 {
+	background: url('../_img/foto4.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto4:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#albumfotos #foto5 {
+	background: url('../_img/foto5.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto5:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#albumfotos #foto6 {
+	background: url('../_img/foto6.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto6:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#albumfotos #foto7 {
+	background: url('../_img/foto7.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto7:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#albumfotos #foto8 {
+	background: url('../_img/foto8.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+}
+#albumfotos #foto8:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+#rodape {
+	margin: 0;
+	padding: 0;
+}
+
+#rodape #faixa-final {
+	height: 57px;
+	width: 100%;
+	position: absolute;
+	top: 5475px;
+	background-color: black;
+}
+
+#rodape .rodape {
+	position: absolute;
+	top: 4900px;
+}
+
+#rodape h5 {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 5500px;
+	left: 500px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .sociais {
+	position: absolute;
+	top: 5405px;
+	left: 995px;
+}
+
+#rodape .sociais li {
+	margin: 0;
+	padding: 3px;
+	display: inline;
+}
+
+#rodape .sociais li:hover {
+	filter: invert(1);
+}
+
+#rodape .outros1 ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 5280px;
+	left: 800px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .outros1 ul li a {
+	color: #ffffff;	
+	text-decoration: none;
+}
+
+#rodape .outros1 ul li a:hover {
+	text-decoration: none;
+	color: #ff1828;
+}
+
+#rodape .outros2 ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 5280px;
+	left: 500px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+}
+
+#rodape .outros2 ul li a {
+	color: #ffffff;	
+	text-decoration: none;
+}
+
+#rodape .outros2 ul li a:hover {
+	text-decoration: none;
+	color: #ff1828;
+}
+
+#rodape #contato a {
+	font-size: 18px;
+	position: absolute;
+	top: 5260px;
+	left: 1030px;
+	font-family: Calibri; Arial; Segoe UI;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#rodape #contato a:hover {
+	color: #ff1828;
+}
