@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Remover() {
+            let familia = document.querySelector(".familia #membro2");
+
+            // remover elemento
+            familia.remove();
+        }
+    </script>
+</head>
+<body>
+    <ul class="familia">
+        <li id="membro1">Nicolas</li>
+        <li id="membro1">Matheus</li>
+        <li id="membro2">Lorena</li>
+        <li id="membro2">Regina</li>
+        <li id="membro3">Italo</li>
+        <li id="membro3">Samuel</li>
+        <li id="membro4">Margarethe</li>
+        <li id="membro4">Regina</li>
+        <li id="membro0">Ferreira</li>
+        <input type="submit" id="remover" name="remover" autofocus onclick="Remover()">
+    </ul>
+</body>
+</html>

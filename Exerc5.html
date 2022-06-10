@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Media(nota1, nota2) {
+            return (nota1+nota2)/2;
+        }
+
+        function Diferenca(nota1, nota2) {
+            return nota1-nota2;
+        }
+
+        function Produto(nota1, nota2) {
+            return nota1*nota2;
+        }
+
+        function Divisao(nota1, nota2) {
+            return nota1/nota2;
+        }
+
+        function main() {
+            let op = document.getElementById('operacao').value        
+            let entrValor1 = document.getElementById('valor1')
+            let entrValor2 = document.getElementById('valor2')
+            let Bsaida = document.getElementById('saida')
+
+            let result;
+            
+            if (op==1) {
+                result = Media(Number(entrValor1.value), Number(entrValor2.value))
+            } else if (op==2) {
+                result = Diferenca(Number(entrValor1.value), Number(entrValor2.value))
+            } else if (op==3) {
+                result = Produto(Number(entrValor1.value), Number(entrValor2.value))
+            } else if (op==4) {
+                result = Divisao(Number(entrValor1.value), Number(entrValor2.value))
+            }            
+            Bsaida.innerHTML = `${result}`;
+        }
+    </script>
+</head>
+<body>
+    <ol>
+        <li>[1]. P/ Media</li>
+        <li>[2]. P/ Diferença</li>
+        <li>[3]. P/ Produto</li>
+        <li>[4]. P/ Divisão</li>
+    </ol>
+    <p>Operação:</p>
+    <input type="number" id="operacao" name="operacao" autofocus>    
+    <input type="number" name="valor1" id="valor1">
+    <input type="number" name="valor2" id="valor2">
+    <input type="submit" name="operar" id="operar" onclick="main()">
+    <div id="saida"></div>    
+</body>
+</html>

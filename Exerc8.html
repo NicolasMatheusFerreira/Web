@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+
+        window.onload = () => {            
+                let blist = document.getElementById('lista');                            
+                for(let i = 0; i<1000000; i++)                
+                    blist.innerHTML += '<li>TESTE</li>';                                
+        };
+    </script>
+</head>
+<body>
+    <ul id="lista">
+        <li class="item1">Item </li>
+        <li class="item2">Item </li>
+        <li class="item3">Item </li>
+    </ul>    
+</body>
+</html>

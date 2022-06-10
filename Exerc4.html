@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Limpar() {
+            let Outsaida = document.getElementById('saida')
+            let entrNota1 = document.getElementById('nota1')
+            let entrNota2 = document.getElementById('nota2')
+
+            Outsaida.innerHTML = ` `;
+            entrNota1.value = ` `;
+            entrNota2.value = ` `;
+        }
+
+        function MediaAritimetica(nota1, nota2) {
+            return media = nota1+nota2/2;
+        }
+
+        function Calcular() {
+            let entrNota1 = document.getElementById('nota1')
+            let entrNota2 = document.getElementById('nota2')
+            let Outsaida = document.getElementById('saida')
+
+            let result = MediaAritimetica(Number(entrNota1.value), Number(entrNota2.value));
+            let estado;
+
+            if (result>=7 && result<=10) {
+                estado = "Aprovado";
+            } else if (result>=3 && result<=7) {
+                estado = "Exame";
+            } else if (result>=0 && result<=3) {
+                estado = "Reprovado";
+            } else estado = "Nota invalida"
+            Outsaida.innerHTML = `${result} voce esta ${estado}`;
+        }
+
+        function main() {
+
+            Calcular();
+            let Outsaida = document.getElementById('saida')            
+            Outsaida.style.backgroundColor = "#FF0F0F";
+        }
+    </script>
+</head>
+<body>
+    <input type="number" name="nota1" id="nota1" autofocus>
+    <input type="number" name="nota2" id="nota2" autofocus>
+    <input type="button" name="calcula" id="calcula" value="Calcular" onclick="main()">
+    <input type="button" name="limpar" id="limpar" value="Limpar" onclick="Limpar()">
+    <div id="saida"></div>
+</body>
+</html>

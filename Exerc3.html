@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        function MediaAritmetica(nota1, nota2, nota3, nota4) {
+            let soma = nota1+nota2+nota3+nota4;
+            let media = soma/4;
+            return media;
+        }
+        function Calcular() {
+            var etrNota1 = document.getElementById('nota1')
+            var etrNota2 = document.getElementById('nota2')
+            var etrNota3 = document.getElementById('nota3')
+            var etrNota4 = document.getElementById('nota4')        
+            
+            let resultado = MediaAritmetica(Number(etrNota1.value), Number(etrNota2.value), Number(etrNota3.value), Number(etrNota4.value))
+            let outSaida = document.getElementById('saida')            
+            if (resultado>=7) {
+                outSaida.innerText = `Aprovado!`;
+            } else outSaida.innerText = `Reprovado!`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calcular notas do aluno</h1>
+    <input type="number" name="nota1" id="nota1" autofocus>
+    <input type="number" name="nota2" id="nota2">
+    <input type="number" name="nota3" id="nota3">
+    <input type="number" name="nota4" id="nota4">
+    <input type="button" value="Aprovado?" id="confirmar" onclick="Calcular()">
+    <div class="saida" id="saida"></div>
+</body>
+</html>

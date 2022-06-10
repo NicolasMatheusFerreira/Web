@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Nacionalidade() {
+            let btPais = document.getElementById('pais')
+            let btSaida = document.getElementById('saida')
+
+            if (btPais.value=="Brasil") {                
+                btSaida.innerText = `Você é brasileiro.`;
+            } else if (btPais.value=="França") {
+                btSaida.innerText = `Você é Francês.`;
+            } else if (btPais.value=="Alemanha") {
+                btSaida.innerText = `Você é alemão.`;
+            } else btSaida.innerText = `Você é estrangeiro!`;
+        }
+    </script>
+</head>
+<body>
+    <p>Informe seu país: </p>
+    <input type="text" id="pais" name="pais" autofocus>
+    <input type="button" value="Confirmar" id="enviar" name="enviar" onclick="Nacionalidade()">
+    <div id="saida"></div>
+</body>
+</html>
